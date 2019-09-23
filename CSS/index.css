@@ -1,0 +1,22 @@
+* {
+  background-color: #d5c5c8;
+}
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+  color: white;
+  font-size: 70px;
+  border: 3px dotted #604d53;
+  width: 15%;
+}
+
+html,
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+.nav-items {
+  color: #604d53;
+  font-size: 20px;
+  display: flex;
+}
