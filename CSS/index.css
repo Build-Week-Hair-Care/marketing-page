@@ -181,7 +181,6 @@ nav {
 
 .wrapsBoth {
   display: flex;
-  background-color: green;
   width: 100%;
 }
 
@@ -191,4 +190,33 @@ nav {
 
 .main-content {
   width: 100%;
+}
+.Info_section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.Info_section p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+h3 {
+  font-family: 'Amatic SC', cursive;
+  color: #604d53;
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.social-media {
+  padding-top: 60px;
+}
+
+.social-media p {
+  padding-top: 50px;
+  font-size: 20px;
+  text-align: center;
+  color: #604d53;
 }
