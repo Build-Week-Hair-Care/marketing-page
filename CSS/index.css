@@ -3,6 +3,14 @@
    License: none (public domain)
 */
 
+/* 
+Colors: 
+Main color: #9da3a4;  
+Font color: #604d53;  
+Headers: FFFFFF;
+Accent color:  D5C5C8; 
+*/
+
 html,
 body,
 div,
@@ -129,19 +137,29 @@ q:after {
   display: flex;
   flex-direction: column;
   width: 25%;
-  margin-left: 20px;
-  padding-right: 20px;
+  margin-left: 0px;
   padding-bottom: 400px;
-  line-height: 2.2;
+  line-height: 1.2;
+  border-right: 3px dotted #604d53;
 }
 
 h1 {
   font-family: 'Amatic SC', cursive;
   color: white;
-  font-size: 70px;
-  border: 3px dotted #604d53;
+  font-size: 85px;
   width: 100%;
   text-align: center;
+  padding-bottom: 0px;
+  padding-top: 20px;
+}
+
+h2 {
+  font-family: 'Amatic SC', cursive;
+  color: white;
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 html,
@@ -149,15 +167,29 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 
+nav {
+  border-top: 3px dotted #604d53;
+}
 .nav-items {
   color: #604d53;
   font-size: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 30px;
-  
+  padding-left: 30px;
 }
 
-.wrapsboth {
-    display: flex;
+.wrapsBoth {
+  display: flex;
+  flex-wrap: column-wrap;
+  background-color: green;
+  width: 100%;
+}
 
+.hair {
+  width: 100%;
+}
+
+.main-content {
+  width: 100%;
+}
