@@ -172,16 +172,15 @@ nav {
 }
 .nav-items {
   color: #604d53;
-  font-size: 20px;
+  font-size: 25px;
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
+  padding-top: 45px;
   padding-left: 30px;
 }
 
 .wrapsBoth {
   display: flex;
-  flex-wrap: column-wrap;
   background-color: green;
   width: 100%;
 }
