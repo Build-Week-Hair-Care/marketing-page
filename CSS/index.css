@@ -156,7 +156,8 @@ h2 {
 h3 {
   font-family: 'Amatic SC', cursive;
   color: #604d53;
-  font-size: 3rem;
+  font-size: 3.3rem;
+  font-weight: bold;
   width: 100%;
   text-align: center;
   padding-bottom: 20px;
@@ -188,9 +189,10 @@ footer {
 }
 footer p {
   color: white;
-  font-size: 1.5rem;
+  font-size: 2.1rem;
   font-family: 'Amatic SC', cursive;
   text-align: center;
+  padding-left: 190px;
 }
 .wrapsBoth {
   display: flex;
@@ -211,8 +213,10 @@ footer p {
   padding-top: 60px;
 }
 .social-media .Icons {
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
 .main-content {
   width: 100%;
@@ -220,13 +224,14 @@ footer p {
 }
 .main-content .hair {
   width: 100%;
+  height: 700px;
 }
-.Info-section {
-  padding-left: 400px;
+.Info_section {
+  padding-left: 190px;
   padding-right: 20px;
 }
-.Info-section .Info-section p {
-  padding-left: 20px;
+.Info_section p {
+  padding-left: 200px;
   padding-right: 20px;
-  font-size: 1rem;
+  font-size: 2rem;
 }
