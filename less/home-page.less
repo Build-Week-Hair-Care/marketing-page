@@ -12,23 +12,44 @@
     line-height: 1.2;
     border-right: 3px dotted @main-color;
     position: fixed;
+
+    @media @mobile {
+      flex-direction: row-reverse;
+      justify-content: center;
+      height: 10%;
+      width: 100%;
+      padding-bottom: 265px;
+    }
+  }
+}
+
+.fading-photos {
+  @media @mobile {
+    display: none;
   }
 }
 
 .social-media {
   padding-top: 60px;
 
+  @media @mobile {
+    display: none;
+  }
+
   .Icons {
     font-size: 40px;
     text-align: center;
-    display: flex;
-    justify-content: space-around;
+    .flexRound();
   }
 }
 
 .main-content {
   width: 100%;
   padding-bottom: 30px;
+
+  @media @mobile {
+    height: 40%;
+  }
 
   .hair {
     width: 100%;
@@ -37,12 +58,17 @@
 }
 
 .Info_section {
-  padding-left: 190px;
+  padding-left: 350px;
   padding-right: 20px;
 
   p {
-    padding-left: 200px;
+    padding-left: 100px;
     padding-right: 20px;
     font-size: 2rem;
+  }
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }

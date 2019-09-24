@@ -1,3 +1,11 @@
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+.flexRound {
+  display: flex;
+  justify-content: space-around;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -135,6 +143,7 @@ html {
 html,
 body {
   font-family: 'Oswald', sans-serif;
+  font-weight: lighter;
 }
 h1 {
   font-family: 'Amatic SC', cursive;
@@ -167,14 +176,20 @@ nav {
   border-top: 3px dotted #604d53;
 }
 nav .nav-items {
+  display: flex;
+  justify-content: center;
   color: #604d53;
   font-size: 3rem;
   font-weight: bold;
-  display: flex;
-  justify-content: center;
   padding-top: 45px;
   padding-left: 30px;
   font-family: 'Amatic SC', cursive;
+}
+@media (max-width: 500px) {
+  nav .nav-items {
+    padding-top: 10px;
+    display: inline;
+  }
 }
 nav .nav-items:hover {
   color: white;
@@ -192,7 +207,7 @@ footer p {
   font-size: 2.1rem;
   font-family: 'Amatic SC', cursive;
   text-align: center;
-  padding-left: 190px;
+  padding-left: 350px;
 }
 .wrapsBoth {
   display: flex;
@@ -209,8 +224,27 @@ footer p {
   border-right: 3px dotted #604d53;
   position: fixed;
 }
+@media (max-width: 500px) {
+  .wrapsBoth .sidebar {
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+    padding-bottom: 265px;
+  }
+}
+@media (max-width: 500px) {
+  .fading-photos {
+    display: none;
+  }
+}
 .social-media {
   padding-top: 60px;
+}
+@media (max-width: 500px) {
+  .social-media {
+    display: none;
+  }
 }
 .social-media .Icons {
   font-size: 40px;
@@ -222,16 +256,27 @@ footer p {
   width: 100%;
   padding-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .main-content {
+    height: 40%;
+  }
+}
 .main-content .hair {
   width: 100%;
   height: 700px;
 }
 .Info_section {
-  padding-left: 190px;
+  padding-left: 350px;
   padding-right: 20px;
 }
 .Info_section p {
-  padding-left: 200px;
+  padding-left: 100px;
   padding-right: 20px;
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .Info_section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
