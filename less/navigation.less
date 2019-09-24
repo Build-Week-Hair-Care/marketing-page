@@ -1,22 +1,22 @@
 nav {
-  border-top: 3px dotted #604d53;
+  border-top: 3px dotted @main-color;
 
   .nav-items {
-    color: #604d53;
-    font-size: 1.5rem;
+    color: @main-color;
+    font-size: 3rem;
     font-weight: bold;
     display: flex;
     justify-content: center;
     padding-top: 45px;
     padding-left: 30px;
-    font-family: 'Amatic SC', cursive;
+    font-family: @mainFont;
 
-    .nav-items:hover {
+    &:hover {
       color: white;
-
-      a:link {
-        text-decoration: none;
-      }
     }
   }
+}
+
+a:link {
+  text-decoration: none;
 }

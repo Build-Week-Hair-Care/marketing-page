@@ -126,6 +126,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
 html {
   font-size: 62.5%;
 }
@@ -164,7 +167,7 @@ nav {
 }
 nav .nav-items {
   color: #604d53;
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -172,13 +175,28 @@ nav .nav-items {
   padding-left: 30px;
   font-family: 'Amatic SC', cursive;
 }
-nav .nav-items .nav-items:hover {
+nav .nav-items:hover {
   color: white;
 }
-nav .nav-items .nav-items:hover a:link {
+a:link {
   text-decoration: none;
 }
-.sidebar {
+footer {
+  background: #604d53;
+  padding: 20px 0;
+  width: 100%;
+}
+footer p {
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+}
+.wrapsBoth {
+  display: flex;
+  width: 100%;
+}
+.wrapsBoth .sidebar {
   background-color: #9da3a4;
   display: flex;
   flex-direction: column;
@@ -189,36 +207,26 @@ nav .nav-items .nav-items:hover a:link {
   border-right: 3px dotted #604d53;
   position: fixed;
 }
-.wrapsBoth {
-  display: flex;
-  width: 100%;
+.social-media {
+  padding-top: 60px;
 }
-.hair {
-  width: 100%;
+.social-media .Icons {
+  font-size: 50px;
+  text-align: center;
 }
 .main-content {
   width: 100%;
   padding-bottom: 30px;
 }
+.main-content .hair {
+  width: 100%;
+}
 .Info-section {
   padding-left: 400px;
   padding-right: 20px;
 }
-.Info-section p {
+.Info-section .Info-section p {
   padding-left: 20px;
   padding-right: 20px;
   font-size: 1rem;
-}
-.social-media {
-  padding-top: 60px;
-}
-.social-media p {
-  padding-top: 50px;
-  font-size: 1.3rem;
-  text-align: center;
-  color: #604d53;
-}
-.Icons {
-  font-size: 3rem;
-  text-align: center;
 }
