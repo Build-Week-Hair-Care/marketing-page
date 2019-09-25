@@ -19,6 +19,7 @@
       height: 10%;
       width: 100%;
       padding-bottom: 265px;
+      border-right: none;
     }
   }
 }
@@ -42,6 +43,15 @@
     .flexRound();
   }
 }
+.pinkBackground {
+  display: none;
+
+  @media @mobile {
+    display: inline;
+    height: 250px;
+    width: 100%;
+  }
+}
 
 .main-content {
   width: 100%;
@@ -60,15 +70,24 @@
 .Info_section {
   padding-left: 350px;
   padding-right: 20px;
+  padding-top: 0px;
+
+  @media @mobile {
+    padding-left: 50px;
+    padding-top: 275px;
+    padding-right: 50px;
+  }
 
   p {
     padding-left: 100px;
     padding-right: 20px;
     font-size: 2rem;
-  }
 
-  @media @mobile {
-    display: flex;
-    flex-direction: column-reverse;
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+      padding-left: 0px;
+      font-size: 1.5rem;
+    }
   }
 }

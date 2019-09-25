@@ -173,6 +173,7 @@ h3 {
   padding-top: 20px;
 }
 nav {
+  padding-top: 30px;
   border-top: 3px dotted #604d53;
 }
 nav .nav-items {
@@ -209,6 +210,11 @@ footer p {
   text-align: center;
   padding-left: 350px;
 }
+@media (max-width: 500px) {
+  footer p {
+    padding-left: 30px;
+  }
+}
 .wrapsBoth {
   display: flex;
   width: 100%;
@@ -231,6 +237,7 @@ footer p {
     height: 10%;
     width: 100%;
     padding-bottom: 265px;
+    border-right: none;
   }
 }
 @media (max-width: 500px) {
@@ -252,6 +259,16 @@ footer p {
   display: flex;
   justify-content: space-around;
 }
+.pinkBackground {
+  display: none;
+}
+@media (max-width: 500px) {
+  .pinkBackground {
+    display: inline;
+    height: 250px;
+    width: 100%;
+  }
+}
 .main-content {
   width: 100%;
   padding-bottom: 30px;
@@ -268,6 +285,14 @@ footer p {
 .Info_section {
   padding-left: 350px;
   padding-right: 20px;
+  padding-top: 0px;
+}
+@media (max-width: 500px) {
+  .Info_section {
+    padding-left: 50px;
+    padding-top: 275px;
+    padding-right: 50px;
+  }
 }
 .Info_section p {
   padding-left: 100px;
@@ -275,8 +300,10 @@ footer p {
   font-size: 2rem;
 }
 @media (max-width: 500px) {
-  .Info_section {
+  .Info_section p {
     display: flex;
     flex-direction: column-reverse;
+    padding-left: 0px;
+    font-size: 1.5rem;
   }
 }
