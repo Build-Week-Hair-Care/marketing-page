@@ -231,7 +231,6 @@ footer p {
   }
 }
 .wrapsBoth {
-  display: flex;
   width: 100%;
 }
 .wrapsBoth .sidebar {
@@ -251,8 +250,9 @@ footer p {
     justify-content: center;
     height: 10%;
     width: 100%;
-    padding-bottom: 265px;
+    padding-bottom: 5px;
     border-right: none;
+    position: relative;
   }
 }
 @media (max-width: 500px) {
@@ -295,7 +295,7 @@ footer p {
 }
 .main-content .hair {
   width: 100%;
-  height: 700px;
+  height: 900px;
 }
 .Info_section {
   padding-left: 300px;
@@ -305,7 +305,7 @@ footer p {
 @media (max-width: 500px) {
   .Info_section {
     padding-left: 50px;
-    padding-top: 275px;
+    padding-top: 10px;
     padding-right: 50px;
   }
 }
