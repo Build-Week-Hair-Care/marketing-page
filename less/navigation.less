@@ -1,0 +1,27 @@
+nav {
+  padding-top: 30px;
+  border-top: 3px dotted @main-color;
+
+  .nav-items {
+    .flexCenter();
+    color: @main-color;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 55px;
+    padding-left: 30px;
+    font-family: @mainFont;
+
+    @media @mobile {
+      padding-top: 10px;
+      display: inline;
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+a:link {
+  text-decoration: none;
+}
