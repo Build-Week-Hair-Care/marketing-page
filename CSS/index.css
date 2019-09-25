@@ -310,9 +310,14 @@ footer p {
 .teamPhotos {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 50px;
   padding-left: 100px;
 }
 .teamPhotos .team {
-  border-radius: 10%;
+  border-radius: 20%;
+}
+.names_titles {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 85px;
 }
