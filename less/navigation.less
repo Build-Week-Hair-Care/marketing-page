@@ -2,6 +2,11 @@ nav {
   padding-top: 30px;
   border-top: 3px dotted @main-color;
 
+  @media @mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .nav-items {
     .flexCenter();
     color: @main-color;
@@ -14,6 +19,7 @@ nav {
     @media @mobile {
       padding-top: 10px;
       display: inline;
+      padding-left: 0;
     }
 
     &:hover {
